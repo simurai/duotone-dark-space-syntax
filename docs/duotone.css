@@ -1,0 +1,507 @@
+atom-text-editor,
+:host {
+  color: #9d9dc8;
+  background-color: #24242e;
+}
+atom-text-editor .line.cursor-line,
+:host .line.cursor-line {
+  background-color: rgba(63, 63, 80, 0.26);
+}
+atom-text-editor .invisible,
+:host .invisible {
+  color: #9d9dc8;
+}
+atom-text-editor .cursor,
+:host .cursor {
+  border-color: #ff8b52;
+  border-left-width: 2px;
+}
+atom-text-editor .selection .region,
+:host .selection .region {
+  background-color: #3f3f50;
+}
+atom-text-editor .bracket-matcher .region,
+:host .bracket-matcher .region {
+  border-bottom: 1px solid #ff8b52;
+}
+atom-text-editor .invisible-character,
+:host .invisible-character {
+  color: #3a3a4a;
+  -webkit-font-smoothing: antialiased;
+}
+atom-text-editor .indent-guide,
+:host .indent-guide {
+  color: #3a3a4a;
+}
+atom-text-editor .wrap-guide,
+:host .wrap-guide {
+  background-color: #3a3a4a;
+}
+atom-text-editor .find-result .region.region.region,
+:host .find-result .region.region.region,
+atom-text-editor .current-result .region.region.region,
+:host .current-result .region.region.region {
+  border-radius: 0px;
+  background-color: rgba(255, 139, 82, 0.16);
+  transition: border-color 0.4s;
+}
+atom-text-editor .find-result .region.region.region,
+:host .find-result .region.region.region {
+  border: 2px solid transparent;
+}
+atom-text-editor .current-result .region.region.region,
+:host .current-result .region.region.region {
+  border: 2px solid #ff8b52;
+  transition-duration: .1s;
+}
+atom-text-editor .gutter .line-number,
+:host .gutter .line-number {
+  color: #595969;
+  -webkit-font-smoothing: antialiased;
+}
+atom-text-editor .gutter .line-number.git-line-removed:before,
+:host .gutter .line-number.git-line-removed:before {
+  bottom: -3px;
+}
+atom-text-editor .gutter .line-number.git-line-removed:after,
+:host .gutter .line-number.git-line-removed:after {
+  content: "";
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  width: 25px;
+  border-bottom: 1px dotted rgba(224, 82, 82, 0.5);
+  pointer-events: none;
+}
+atom-text-editor .gutter .line-number.cursor-line,
+:host .gutter .line-number.cursor-line {
+  color: #9d9dc8;
+  background-color: #2b2b36;
+}
+atom-text-editor .gutter .line-number.cursor-line-no-selection,
+:host .gutter .line-number.cursor-line-no-selection {
+  background-color: transparent;
+}
+atom-text-editor .gutter .line-number .icon-right,
+:host .gutter .line-number .icon-right {
+  color: #9d9dc8;
+}
+atom-text-editor .gutter .line-number.folded,
+:host .gutter .line-number.folded,
+atom-text-editor .gutter .line-number:after,
+:host .gutter .line-number:after,
+atom-text-editor .fold-marker:after,
+:host .fold-marker:after {
+  color: #9d9dc8;
+}
+.uno-1 {
+  color: #ebebff;
+}
+.uno-2 {
+  color: #9d9dc8;
+}
+.uno-3 {
+  color: #767693;
+}
+.uno-4 {
+  color: #595969;
+}
+.uno-5 {
+  color: #3d3d42;
+}
+.duo-1 {
+  color: #fe8c52;
+}
+.duo-2 {
+  color: #dd672c;
+}
+.duo-3 {
+  color: #6a574d;
+}
+.meta {
+  color: #3d3d42;
+}
+.html.elements,
+.entity,
+.tag,
+.function-call {
+  color: #ebebff;
+}
+.attribute-name,
+.character.escape {
+  color: #767693;
+}
+.support {
+  color: #595969;
+}
+.variable {
+  color: #767693;
+}
+.string,
+.constant,
+.storage.type {
+  color: #fe8c52;
+}
+.keyword,
+.storage {
+  color: #dd672c;
+}
+.punctuation,
+.bracket,
+.brace {
+  color: #3d3d42;
+}
+.string .punctuation {
+  color: #6a574d;
+}
+.comment {
+  color: #3d3d42;
+  font-style: italic;
+}
+.bold {
+  font-weight: bold;
+}
+.italic {
+  font-style: italic;
+}
+.c .parens,
+.c .block {
+  color: #9d9dc8;
+}
+.c .parens .punctuation,
+.c .block .punctuation,
+.c .parens .bracket,
+.c .block .bracket,
+.c .parens .brace,
+.c .block .brace {
+  color: #3d3d42;
+}
+.c .parens .string .punctuation,
+.c .block .string .punctuation {
+  color: #6a574d;
+}
+.c .comment {
+  color: #6a574d;
+}
+.source.clojure .expression {
+  color: #fe8c52;
+}
+.source.clojure .expression .punctuation {
+  color: #3d3d42;
+}
+.source.clojure .symbol {
+  color: #9d9dc8;
+}
+.source.clojure .vector {
+  color: #595969;
+}
+.coffee.source {
+  color: #595969;
+}
+.source.cs .meta {
+  color: #595969;
+}
+.source.cs .method {
+  color: #9d9dc8;
+}
+.css.source {
+  color: #3d3d42;
+}
+.css.attribute-name.id,
+.css.attribute-name.class,
+.css.attribute-name.parent-selector {
+  color: #ebebff;
+}
+.css.unit {
+  color: #dd672c;
+}
+.css.function {
+  color: #6a574d;
+}
+.css.punctuation.terminator {
+  color: #6a574d;
+}
+.css.at-rule {
+  color: #ebebff;
+}
+.css.at-rule .keyword.punctuation {
+  color: inherit;
+}
+.gfm {
+  color: #ebebff;
+}
+.gfm .punctuation,
+.gfm .bracket,
+.gfm .brace {
+  color: #3d3d42;
+}
+.gfm .string .punctuation {
+  color: #6a574d;
+}
+.gfm .link {
+  color: #9d9dc8;
+}
+.gfm.markup {
+  color: #9d9dc8;
+}
+.gfm.markup.bold {
+  font-weight: bold;
+}
+.gfm.markup.italic {
+  font-style: italic;
+}
+.gfm.markup.strike {
+  color: #3d3d42;
+  text-decoration: line-through;
+}
+.gfm.markup.raw {
+  color: #fe8c52;
+}
+.gfm.markup.raw .support,
+.gfm.markup.code .support {
+  color: #3d3d42;
+}
+.gfm.comment {
+  color: #3d3d42;
+}
+.gfm.comment.quote {
+  color: #9d9dc8;
+}
+.gfm.table {
+  color: #fe8c52;
+}
+.gfm.table .border,
+.gfm.table .pipe {
+  color: #3d3d42;
+}
+.gfm.variable,
+.gfm.entity {
+  color: #fe8c52;
+}
+.gfm.support {
+  color: #dd672c;
+}
+.gfm.heading-1,
+.gfm.heading-2,
+.gfm.heading-3 {
+  color: #fe8c52;
+}
+.gfm.heading-4,
+.gfm.heading-5,
+.gfm.heading-6 {
+  color: #dd672c;
+}
+.haskell.source {
+  color: #9d9dc8;
+}
+.haskell.source .punctuation,
+.haskell.source .bracket,
+.haskell.source .brace {
+  color: #3d3d42;
+}
+.haskell.source .string .punctuation {
+  color: #6a574d;
+}
+.html.meta {
+  color: #3d3d42;
+}
+.html.text {
+  color: #595969;
+}
+.html .string .id {
+  color: #fe8c52;
+}
+.jade.text {
+  color: #595969;
+}
+.jade .meta.control.flow {
+  color: #9d9dc8;
+}
+.jade .constant.name.attribute.tag {
+  color: #3d3d42;
+}
+.jade .attribute-name.id {
+  color: #fe8c52;
+}
+.java .method {
+  color: #9d9dc8;
+}
+.java .method .punctuation,
+.java .method .bracket,
+.java .method .brace {
+  color: #3d3d42;
+}
+.java .method .string .punctuation {
+  color: #6a574d;
+}
+.java .dereference {
+  color: #3d3d42;
+}
+.js.source {
+  color: #9d9dc8;
+}
+.js.source .punctuation,
+.js.source .bracket,
+.js.source .brace {
+  color: #3d3d42;
+}
+.js.source .string .punctuation {
+  color: #6a574d;
+}
+.json .string {
+  color: #9d9dc8;
+}
+.json .string .punctuation {
+  color: #3d3d42;
+}
+.json .value > .string {
+  color: #fe8c52;
+}
+.json .value > .string .punctuation {
+  color: #3d3d42;
+}
+.json .value .constant {
+  color: #dd672c;
+}
+.less.variable:first-child {
+  color: #9d9dc8;
+}
+.less .mixin {
+  color: #dd672c;
+}
+.mediawiki {
+  color: #ebebff;
+}
+.mediawiki .punctuation,
+.mediawiki .bracket,
+.mediawiki .brace {
+  color: #3d3d42;
+}
+.mediawiki .string .punctuation {
+  color: #6a574d;
+}
+.mediawiki .wiki-link {
+  color: #9d9dc8;
+}
+.mediawiki .heading {
+  color: #fe8c52;
+}
+.mediawiki .function-call {
+  color: #dd672c;
+}
+.mediawiki .value {
+  color: #fe8c52;
+}
+.mediawiki .fix_this_later {
+  color: #9d9dc8;
+}
+.mediawiki .pipe,
+.mediawiki .link,
+.mediawiki .tag {
+  color: #3d3d42;
+}
+.php .string-contents {
+  color: #fe8c52;
+}
+.sass .at-rule .at-rule,
+.sass .at-rule .at-rule > .punctuation {
+  color: #ebebff;
+}
+.sass .mixin + .function,
+.sass .include + .function {
+  color: #dd672c;
+}
+.sass.property-value {
+  color: #fe8c52;
+}
+.sass.property-value .function {
+  color: #9d9dc8;
+}
+.sass.property-value .punctuation {
+  color: #3d3d42;
+}
+.sass.variable.parameter.url {
+  color: #fe8c52;
+}
+.sass.class,
+.sass.parent-selector-suffix {
+  color: #ebebff;
+}
+.scss .at-rule .at-rule,
+.scss .at-rule .at-rule > .punctuation {
+  color: #ebebff;
+}
+.scss .mixin + .function,
+.scss .include + .function {
+  color: #dd672c;
+}
+.scss.property-value {
+  color: #fe8c52;
+}
+.scss.property-value .function {
+  color: #9d9dc8;
+}
+.scss.property-value .punctuation {
+  color: #3d3d42;
+}
+.scss.variable.parameter.url {
+  color: #fe8c52;
+}
+.scss.class,
+.scss.parent-selector-suffix {
+  color: #ebebff;
+}
+.slim.meta {
+  color: #3d3d42;
+}
+.slim.text {
+  color: #595969;
+}
+.slim .string .id {
+  color: #fe8c52;
+}
+.stylus .function .name {
+  color: #dd672c;
+}
+.tex .other {
+  color: #dd672c;
+}
+.tex .reference {
+  color: #9d9dc8;
+}
+.plain .text {
+  color: #ebebff;
+}
+.yaml .tag {
+  color: #9d9dc8;
+}
+.yaml .constant {
+  color: #dd672c;
+}
+.yaml .punctuation {
+  color: #3d3d42;
+}
+[data-screen-row="1"] .plain {
+  color: var(--uno-1, #ebebff);
+}
+[data-screen-row="2"] .plain {
+  color: var(--uno-2, #9d9dc8);
+}
+[data-screen-row="3"] .plain {
+  color: var(--uno-3, #767693);
+}
+[data-screen-row="4"] .plain {
+  color: var(--uno-4, #595969);
+}
+[data-screen-row="5"] .plain {
+  color: var(--uno-5, #3d3d42);
+}
+[data-screen-row="7"] .plain {
+  color: var(--duo-1, #fe8c52);
+}
+[data-screen-row="8"] .plain {
+  color: var(--duo-2, #dd672c);
+}
+[data-screen-row="9"] .plain {
+  color: var(--duo-3, #6a574d);
+}
